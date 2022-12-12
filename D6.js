@@ -127,13 +127,26 @@ console.log(reverseString("Ciao"))
 console.log("-------------------ESERCIZIO 8------------------- ")
 
 const upperFirst = function (stringaParole) {
-  let str = stringaParole.split("")
+  let risultato
+  let str = stringaParole.split(" ")
 
-  for (let i = 0; i < stringaParole.lenght; i++) {
-    let parole = stringaParole.charAt(0)
+  for (let i = 0; i < str.lenght; i++) {
+    let parole = str[i].split("")
+
+    let stringaFinale = ""
+    for (let index = 0; index < parole.lenght; index++) {
+      if (index === 0) {
+        let primaMaiuscola = parole[index].toUpperCase()
+        stringaFinale += primaMaiuscola
+      } else {
+        stringaFinale += str[index]
+      }
+    }
+    risultato += stringaFinale + " "
   }
+  return risultato
 }
-console.log(upperFirst("Questa è una esercitazione"))
+console.log(upperFirst("Ora la Proviamo"))
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
@@ -147,4 +160,9 @@ console.log("-------------------ESERCIZIO 9------------------- ")
 */
 console.log("-------------------ESERCIZIO 10------------------- ")
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const giveMeRandom = function (n) {
+  let arrays = [Math.floor(Math.random() * 10)]
+  n = arrays
+  return n
+}
+console.log()
