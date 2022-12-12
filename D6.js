@@ -107,6 +107,17 @@ console.log(check3and7(21))
 */
 console.log("-------------------ESERCIZIO 7------------------- ")
 
+function reverseString(stringa) {
+  let stringaTag = stringa.split("")
+  console.log(stringaTag)
+  let stringaCont = stringaTag.reverse()
+  console.log(stringaCont)
+  let risultato = stringaCont.join()
+  console.log(risultato)
+}
+
+console.log(reverseString("Ciao"))
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 8
@@ -115,8 +126,14 @@ console.log("-------------------ESERCIZIO 7------------------- ")
 */
 console.log("-------------------ESERCIZIO 8------------------- ")
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const upperFirst = function (stringaParole) {
+  let str = stringaParole.split("")
 
+  for (let i = 0; i < stringaParole.lenght; i++) {
+    let parole = stringaParole.charAt(0)
+  }
+}
+console.log(upperFirst("Questa è una esercitazione"))
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
  della stringa originale.
