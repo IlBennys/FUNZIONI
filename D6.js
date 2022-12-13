@@ -165,4 +165,4 @@ const giveMeRandom = function (n) {
   n = arrays
   return n
 }
-console.log()
+console.log(giveMeRandom())
