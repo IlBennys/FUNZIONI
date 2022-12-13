@@ -114,6 +114,7 @@ function reverseString(stringa) {
   console.log(stringaCont)
   let risultato = stringaCont.join()
   console.log(risultato)
+  return risultato
 }
 
 console.log(reverseString("Ciao"))
